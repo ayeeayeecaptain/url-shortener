@@ -1,15 +1,15 @@
 package handler
 
 import (
-	"context" // <--- Make sure this is imported
+	"context"
 	"encoding/json"
 	"net/http"
 	"strings"
 )
 
 type Service interface {
-	Shorten(ctx context.Context, longURL string) (string, error) // <--- Fixed here
-	Resolve(ctx context.Context, token string) (string, error)   // <--- Fixed here
+	Shorten(ctx context.Context, longURL string) (string, error)
+	Resolve(ctx context.Context, token string) (string, error)
 }
 
 type HTTPHandler struct {
