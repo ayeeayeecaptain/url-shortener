@@ -1,0 +1,15 @@
+
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
